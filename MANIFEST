@@ -1,0 +1,14 @@
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+README.md
+dist.ini
+dist.ini~
+lib/MooX/Log/Any.pm
+lib/MooX/Log/Any.pm~
+t/l0.t
+t/l0.t~
