@@ -16,6 +16,20 @@ sub logger {
 }
 1;
 
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+MooX::Log::Any - Role to add Log::Any
+
+=head1 VERSION
+
+version 0.0.2
+
 =head1 SYNOPSIS
 
     package MyApp;
@@ -47,7 +61,6 @@ Using the logger within a class is as simple as consuming a role:
 
 The logger needs to be setup before using the logger, which could happen in the main application:
 
-
     package main;
     use Log::Any::Adapter;
     # Send all logs to Log::Log4perl
@@ -57,9 +70,6 @@ The logger needs to be setup before using the logger, which could happen in the 
     my $myclass = MyClass->new();
     $myclass->log->info("In my class"); # Access the log of the object
     $myclass->dummy;                    # Will log "Dummy log entry"
-
-
-
 
 =head1 ACCESSORS
 
@@ -78,7 +88,6 @@ roles/systems like L<MooseX::Log::LogDispatch> this can be thought of as a commo
     $self->logger->info("Everything fine so far");    # logs a info message
     $self->logger->debug("Something is fishy here");  # logs a debug message
   }
-
 
 =head2 logger([$category])
 
@@ -108,6 +117,18 @@ In alphabetical order:
 
 =over 2
 
-
-=back
+=back 
 ;
+
+=head1 AUTHOR
+
+Edward Ash <eddie+cpan@ashfamily.net>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Edward Ash.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
